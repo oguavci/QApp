@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="309dp"
+        android:layout_height="381dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+
+    </View>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="302dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="38dp"
+        android:checkable="false"
+        android:clickable="false"
+        android:text="Success"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="YOUR TICKET"
+        app:layout_constraintEnd_toStartOf="@+id/qr_img"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/qr_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/peopletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="There are N people before you."
+        app:layout_constraintBottom_toTopOf="@+id/timertext"
+        app:layout_constraintStart_toStartOf="@+id/timertext" />
+
+    <ImageView
+        android:id="@+id/qr_img"
+        android:layout_width="202dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintBottom_toBottomOf="@+id/peopletext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:srcCompat="@android:drawable/editbox_dropdown_light_frame" />
+
+    <TextView
+        android:id="@+id/timertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="280dp"
+        android:text="Your turn will come about in N min!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/qr_img"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:text="SHOW"
+        app:layout_constraintStart_toStartOf="@+id/timertext"
+        app:layout_constraintTop_toBottomOf="@+id/timertext" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="CANCEL"
+        app:layout_constraintEnd_toEndOf="@+id/timertext"
+        app:layout_constraintTop_toBottomOf="@+id/timertext" />
+
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="60dp"
+        android:text="HOME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

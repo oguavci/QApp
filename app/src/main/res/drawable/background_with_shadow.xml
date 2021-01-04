@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item >
+        <shape
+            android:shape="rectangle">
+            <solid android:color="#C8C8C8" />
+            <corners android:radius="2dp"/>
+            <!-- Not needed anymore after using padding and divider in ListView-->
+            <!-- <stroke android:width="20dp"/> -->
+        </shape>
+    </item>
+
+    <item android:right="0.5dp" android:left="0.5dp" android:top="0.5dp" android:bottom="1.5dp">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+            <corners android:radius="2dp"/>
+            <!-- Not needed anymore after using padding and divider in ListView-->
+            <!-- <stroke android:width="20dp"/> -->
+            <padding android:left="7dp" android:right="7dp"
+                android:top="7dp" android:bottom="7dp" />
+        </shape>
+    </item>
+</layer-list>

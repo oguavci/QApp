@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Light"
+    android:background="@color/white"
+    tools:context=".HomePage"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/q_blue"/>
+
+    <TextView
+        android:id="@+id/menu_user"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:paddingTop="2dp"
+        android:text="@string/user_nav"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/menu_email"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:text="@string/mail_nav" />
+</LinearLayout>
